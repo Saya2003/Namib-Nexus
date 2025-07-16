@@ -1,0 +1,25 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #2b5876 0%, #4e4376 100%);
+  padding: 18px 0;
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 2px 8px rgba(43,88,118,0.08);
+  margin-bottom: 32px;
+}
+
+.navbar-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin: 0 18px;
+  padding: 8px 18px;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.navbar-link:hover {
+  background: rgba(255,255,255,0.15);
+  color: #e0eafc;
+}
