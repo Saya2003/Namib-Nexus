@@ -1,0 +1,183 @@
+/* ==== LAYOUT ==== */
+.learn-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  background: #f8f9fb;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+/* ==== SIDEBAR ==== */
+.learn-sidebar {
+  position: sticky;
+  top: 0;
+  width: 260px;
+  height: 100vh;
+  padding: 2rem 1rem;
+  overflow-y: auto;
+  background-color: #ffffff;
+  border-right: 1px solid #e0e0e0;
+}
+
+/* Remove bullets and padding */
+.learn-sidebar ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.learn-sidebar li {
+  margin-bottom: 0.4rem;
+}
+
+/* Sidebar Links */
+.sidebar-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: #1f2937;
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.sidebar-link:hover {
+  background-color: #eef6fa;
+  color: #0284c7;
+}
+
+/* Arrows */
+.arrow {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+/* Section styling */
+.learn-sidebar > ul > li > .sidebar-link {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.learn-sidebar ul ul > li > .sidebar-link {
+  font-size: 1rem;
+  font-weight: 600;
+  padding-left: 1.25rem;
+}
+
+.learn-sidebar ul ul ul > li > .sidebar-link {
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding-left: 2rem;
+  color: #4b5563;
+}
+
+/* ==== MAIN CONTENT ==== */
+.learn-content {
+  flex: 1;
+  max-width: 900px;
+  padding: 2rem 2rem;
+  margin: 0 auto;
+  background: #ffffff;
+  color: #1f2937;
+  line-height: 1.7;
+  /* Ensure overall left alignment */
+  text-align: left;
+}
+
+/* SECTION HEADINGS (H2) */
+.learn-content > section > h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  border-bottom: 2px solid #0284c7;
+  padding-bottom: 0.5rem;
+  color: #1e3a8a;
+  text-align: left;
+}
+
+/* ARTICLE HEADINGS (H3) */
+.learn-content article > h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #0f172a;
+  border-left: 4px solid #38bdf8;
+  padding-left: 0.75rem;
+  background-color: #f0f9ff;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  text-align: left;
+}
+
+/* SUBSECTIONS (H4) */
+.learn-content article section > h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #0369a1;
+  text-align: left;
+}
+
+/* PARAGRAPH TEXT */
+.learn-content p {
+  font-size: 1.05rem;
+  margin-bottom: 1.25rem;
+  text-align: left;
+}
+
+/* BULLET LISTS */
+.learn-content ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.learn-content li {
+  margin-bottom: 0.6rem;
+  font-size: 1.05rem;
+  text-align: left;
+}
+
+/* LINKS */
+.learn-content a {
+  color: #0284c7;
+  text-decoration: underline;
+}
+
+.learn-content a:hover {
+  color: #0369a1;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+  .learn-container {
+    flex-direction: column;
+  }
+
+  .learn-sidebar {
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .learn-content {
+    padding: 1.5rem 1rem;
+  }
+
+  .learn-content > section > h2 {
+    font-size: 1.6rem;
+  }
+
+  .learn-content article > h3 {
+    font-size: 1.25rem;
+  }
+
+  .learn-content article section > h4 {
+    font-size: 1.05rem;
+  }
+}

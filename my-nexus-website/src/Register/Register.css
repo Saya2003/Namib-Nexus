@@ -1,0 +1,120 @@
+/* Register.css */
+
+.pages-container {
+  min-height: 80vh;
+  max-width: 420px;
+  margin: 3rem auto;
+  padding: 2.5rem 2rem;
+  background: #ffffffee;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(43, 88, 118, 0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2b5876;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pages-title {
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  text-align: center;
+  letter-spacing: 1.1px;
+  color: #3a5771;
+}
+
+.pages-desc {
+  font-size: 1.1rem;
+  max-width: 360px;
+  text-align: center;
+  margin-bottom: 1.8rem;
+  color: #4a6b85;
+  line-height: 1.4;
+}
+
+.pages-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.pages-input {
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 2px solid #b0c4de;
+  border-radius: 8px;
+  outline-offset: 2px;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  color: #2b5876;
+  font-weight: 500;
+}
+
+.pages-input::placeholder {
+  color: #a0aec0;
+}
+
+.pages-input:focus {
+  border-color: #4e4376;
+  box-shadow: 0 0 8px rgba(78, 67, 118, 0.5);
+  background: #f5f7fa;
+}
+
+.pages-button {
+  background: linear-gradient(90deg, #2b5876 0%, #4e4376 100%);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 14px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 5px 16px rgba(43, 88, 118, 0.25);
+  transition: background 0.3s ease, transform 0.15s ease;
+  margin-top: 0.6rem;
+}
+
+.pages-button:hover,
+.pages-button:focus {
+  background: linear-gradient(90deg, #4e4376 0%, #2b5876 100%);
+  transform: translateY(-2px);
+  outline: none;
+}
+
+.pages-error {
+  margin-top: 0.7rem;
+  color: #d9534f; /* bootstrap red */
+  font-weight: 600;
+  text-align: center;
+}
+
+.pages-success {
+  margin-top: 0.7rem;
+  color: #28a745; /* bootstrap green */
+  font-weight: 600;
+  text-align: center;
+}
+
+.pages-desc a {
+  color: #4e4376;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.pages-desc a:hover,
+.pages-desc a:focus {
+  color: #2b5876;
+  text-decoration: underline;
+  outline: none;
+}
+
+.pages-footer {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-top: 2.4rem;
+  text-align: center;
+  letter-spacing: 0.8px;
+  user-select: none;
+}

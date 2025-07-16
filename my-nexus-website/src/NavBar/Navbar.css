@@ -1,0 +1,58 @@
+/* src/Navbar.css */
+.navbar {
+   background: linear-gradient(90deg, #2b5876 0%, #4e4376 100%);
+  color: white;
+  padding: 18px 0;
+  border-radius: 0 0 16px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(43,88,118,0.08);
+  margin-bottom: 32px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-item .nav-links {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav-item .nav-links:hover,
+.nav-item .nav-links.active {
+  color: #00ffc3;
+}
+
+.nav-item .nav-links.active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #00ffc3;
+  bottom: -5px;
+  left: 0;
+}
